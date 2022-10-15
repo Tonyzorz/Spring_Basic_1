@@ -1,8 +1,11 @@
 package hello.core_20220927.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository {
     
     // Concurrent HashMap is used for synchronized environment
